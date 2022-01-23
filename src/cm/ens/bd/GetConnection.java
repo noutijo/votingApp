@@ -19,7 +19,7 @@ public class GetConnection {
 
         Connection myConne = null;
         Class.forName("com.mysql.jdbc.Driver");
-        myConne = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ens", "root", "bihoncare");
+        myConne = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ens", "root", "YOUR PASSORD");
         System.out.println("Connecté !");
   
         return myConne;
