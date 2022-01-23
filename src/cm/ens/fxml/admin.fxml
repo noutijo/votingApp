@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="927.0" style="-fx-background-color: white;" stylesheets="@../styles/tabPane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.ens.controllers.AdminController">
+   <children>
+      <VBox layoutY="188.0" prefHeight="275.0" prefWidth="152.0" style="-fx-border-color: #f3f3f3; -fx-border-radius: 0px 5px 5px 0px; -fx-background-color: white;" styleClass="menuens" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="188.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#ajouterCandidatCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/Permanent%20Job_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un candidat">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#ajouterVotantCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/User_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un votant">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#ajouterPartiVotantCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/Permanent%20Job_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un parti">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#listeCanditsCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/Bulleted%20List_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des candidats">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#listeVotantsCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/List_64px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des votants">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#EvaluationCliquer" prefHeight="100.0" prefWidth="200.0" styleClass="menuens">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/Test%20Passed_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5e5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultats">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="167.0" layoutY="60.0" prefHeight="530.0" prefWidth="750.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox fx:id="panneauAdminChargement" alignment="CENTER" layoutX="40.0" layoutY="53.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="32.0">
+         <image>
+            <Image url="@../icons/UY1.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="860.0" layoutY="20.0" onMouseClicked="#logout" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Logout%20Rounded%20Down_52px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Text layoutX="177.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrateur">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle fill="#19a119" layoutX="167.0" layoutY="43.0" radius="5.0" stroke="WHITE" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

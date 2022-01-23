@@ -1,0 +1,10 @@
+/*Login css*/
+.side{
+    -fx-background-image:url('../icons/vote.jpg');
+    -fx-margin: 0px;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+.menuens :hover{
+    -fx-background-color: #f3f3f3;
+}  

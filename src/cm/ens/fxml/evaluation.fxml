@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="750.0" style="-fx-background-color: #bdbdb;" stylesheets="@../styles/tableview.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.ens.controllers.EvaluationController">
+   <children>
+      <TableView fx:id="tableResult" prefHeight="497.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="nomsPartis" maxWidth="300.0" prefWidth="75.0" text="Nom Partis" />
+            <TableColumn fx:id="nombresMillitants" maxWidth="200.0" prefWidth="75.0" text="Nombres millitants" />
+            <TableColumn fx:id="nombresVotes" maxWidth="200.0" prefWidth="75.0" text="nombres de vote" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox layoutX="15.0" layoutY="30.0" onMouseClicked="#reloadCliquer" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Refresh_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

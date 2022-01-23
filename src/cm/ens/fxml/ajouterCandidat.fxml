@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.ens.controllers.AjouterCandidatController">
+   <children>
+      <VBox layoutX="148.0" layoutY="134.0" prefHeight="220.0" prefWidth="454.0" spacing="35.0">
+         <children>
+            <JFXTextField fx:id="identiffiantCandidat" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="313.0" promptText="Identifiant Candidat" />
+            <JFXTextField fx:id="nomCandidat" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="313.0" promptText="Nom candidat" />
+            <JFXTextField fx:id="prenomCandidat" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="313.0" promptText="Prenom candidat" />
+            <JFXTextField fx:id="ageCandidat" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="313.0" promptText="age" />
+            <JFXComboBox fx:id="nomParti" labelFloat="true" prefHeight="25.0" prefWidth="317.0" promptText="Nom parti" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <JFXButton layoutX="497.0" layoutY="446.0" onMouseClicked="#validerCliquer" prefHeight="27.0" prefWidth="105.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: #00aff0; -fx-background-color: #00aff0;" text="Valider" textFill="WHITE" />
+      <JFXButton layoutX="375.0" layoutY="446.0" onMouseClicked="#viderCliquer" prefHeight="27.0" prefWidth="105.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: #00aff0; -fx-background-color: white;" text="Vider" textFill="#00aff0" />
+      <HBox layoutX="222.0" layoutY="450.0" spacing="40.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="222.0">
+         <children>
+            <Pane fx:id="green" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: green; -fx-background-radius: 100px;" visible="false" />
+            <Pane fx:id="red" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: red; -fx-background-radius: 100px;" visible="false" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

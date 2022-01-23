@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.ens.controllers.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../styles/tabPane.css" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <AnchorPane layoutX="320.0" prefHeight="425.0" prefWidth="280.0" styleClass="side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="36.0" layoutY="103.0" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00aff0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="161.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Election SUP'PTIC">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiez-vous pour y accéder.">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <HBox layoutX="219.0" onMouseClicked="#fermercliquer" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Delete_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="WHITE" layoutX="54.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENUE" wrappingWidth="104.99999821186066">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="44.0" layoutY="177.0" prefHeight="135.0" prefWidth="227.0" spacing="30.0">
+               <children>
+                  <JFXTextField fx:id="identifiant" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="260.0" promptText="Identifiant" unFocusColor="#4d4d4d" />
+                  <JFXPasswordField fx:id="motDePasse" labelFloat="true" promptText="mot de passe" />
+                  <JFXComboBox fx:id="identifiantPlus" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="260.0" promptText="Qui êtes-vous ?" />
+               </children>
+            </VBox>
+            <JFXButton layoutX="185.0" layoutY="376.0" onMouseClicked="#valider" prefHeight="27.0" prefWidth="105.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: #00aff0; -fx-background-color: white;" text="Valider" textFill="#00aff0" />
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="128.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="128.0" AnchorPane.topAnchor="49.0">
+               <image>
+                  <Image url="@../icons/UY1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="144.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../icons/a.gif" />
+               </image>
+            </ImageView>
+            <Text fill="#00aff0" layoutX="43.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pas besoin de mot de passe en tant que  électeur." AnchorPane.leftAnchor="42.7626953125" AnchorPane.rightAnchor="310.2373046875">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fx:id="messageError" fill="#f00a00" layoutX="34.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vérifiez bien vos informations fournies." visible="false" AnchorPane.leftAnchor="42.7626953125" AnchorPane.rightAnchor="310.474609375" />
+         </children>
+         <effect>
+            <DropShadow color="#282828" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
