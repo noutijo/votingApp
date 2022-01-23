@@ -1,6 +1,8 @@
 # votingApp
 `votingApp` is a desktop application for automatic, real-time management.
 
+>Watch the demonstration on youTube: [VotingApp](https://www.youtube.com/watch?v=gs1yInbSJEA&t=68s)
+
 # libs
 
 For the functioning of the application, it requires that some libraries are integrated in the project. So, you have to integrate the libraries that are in the `/libs` folder in your project.
