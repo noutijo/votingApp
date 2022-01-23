@@ -37,6 +37,7 @@ Once you have launched the application you must log in as either administrator o
 Some administrator side features
 
 `Add candidate`
+
 ![](/imgs/addcandidat.png)
 
 `View the voting results`
@@ -48,6 +49,7 @@ Some administrator side features
 Some elector side features
 
 `Vote for a candidate`
+
 ![](/imgs/elector.png)
 
 
