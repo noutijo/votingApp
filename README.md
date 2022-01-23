@@ -1,7 +1,7 @@
 # votingApp
 `votingApp` is a desktop application for automatic, real-time management.
 
->Watch the demonstration on youTube: [VotingApp](https://www.youtube.com/watch?v=gs1yInbSJEA&t=68s)
+>Watch the demonstration on youTube: [VotingApp](https://youtu.be/gs1yInbSJEA)
 
 # libs
 
