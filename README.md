@@ -1,5 +1,5 @@
 # votingApp
-`votingApp` is a desktop application for automatic, real-time management.
+`votingApp` is a desktop application for automatic and real-time election management.
 
 >Watch the demonstration on youTube: [VotingApp](https://youtu.be/gs1yInbSJEA)
 
